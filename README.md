@@ -3,8 +3,11 @@ To use this configuration you must first install OpenResty:
 
 And update nginx.conf file with paths to your server environment.
 
-The run the next command:
-  sudo /usr/local/openresty/bin/openresty -p `pwd`/ -c ubidots-nginx/nginx.conf
-To reload nginx server run:
-  sudo /usr/local/openresty/bin/openresty -p `pwd`/ -c ubidots-nginx/nginx.conf -s reload
+The run the server use:
+
+    sudo /usr/local/openresty/bin/openresty -p `pwd`/ -c ubidots-nginx/nginx.conf
+    
+To restart the server use:
+
+    sudo /usr/local/openresty/bin/openresty -p `pwd`/ -c ubidots-nginx/nginx.conf -s reload
 
